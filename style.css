@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+:root {
+  --primary-color1: hsl(179, 62%, 43%);
+  --primary-color2: hsl(71, 73%, 54%);
+
+  --neutral-color1: hsl(204, 43%, 93%);
+  --neutral-color2: hsl(218, 22%, 67%);
+
+  --main-font: "Karla", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-color1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 3%;
+}
+
+.card1 {
+  margin: 0 auto;
+  padding: 2rem;
+  padding-left: 4rem;
+  background-color: hsl(203, 100%, 97%);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card1__title {
+  font-weight: 700;
+  color: var(--primary-color1);
+}
+
+.card1__subtitle {
+  font-weight: 700;
+  color: var(--primary-color2);
+  padding: 4% 0 2% 0;
+}
+
+.card1__text {
+  font-weight: 400;
+  color: var(--neutral-color2);
+  padding-bottom: 1%;
+}
+
+.bottom__cards {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.card2 {
+  padding: 5%;
+  padding-left: 4rem;
+  background-color: var(--primary-color1);
+  flex: 1;
+}
+
+.card2__subtitle {
+  color: var(--neutral-color1);
+  font-weight: 700;
+  padding-bottom: 10%;
+}
+
+strong {
+  font-size: 2rem;
+  color: var(--neutral-color1);
+  text-align: center;
+}
+
+.card2__text {
+  color: var(--neutral-color1);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding-bottom: 5%;
+}
+
+.card2__button {
+  color: var(--neutral-color1);
+  background-color: var(--primary-color2);
+  width: 100%;
+  padding: 6%;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card2__button:hover {
+  cursor: pointer;
+  background-color: var(--neutral-color2);
+}
+
+.card3 {
+  padding: 5%;
+  background-color: hsl(179, 62%, 47%);
+  flex: 1;
+}
+
+.card3__subtitle {
+  color: var(--neutral-color1);
+  font-weight: 700;
+  padding-bottom: 15%;
+}
+
+ul {
+  list-style-type: none;
+  color: var(--neutral-color1);
+  font-weight: 400;
+}
+
+li {
+  padding-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 60%;
+  }
+
+  .bottom__cards {
+    flex-direction: column;
+  }
+
+  .card3 {
+    padding-left: 4rem;
+  }
+}
