@@ -45,7 +45,6 @@ div {
   display: flex;
   width: auto;
   height: auto;
-  gap: 10%
 }
 
 .card2 {
@@ -84,4 +83,25 @@ strong {
   font-weight: 700;
   font-size: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card3 {
+  padding: 5%;
+  background-color: hsl(179, 62%, 47%);
+}
+
+.card3__subtitle {
+  color: var(--neutral-color1);
+  font-weight: 700;
+  padding-bottom: 15%;
+}
+
+ul {
+  list-style-type: none;
+  color: var(--neutral-color1);
+  font-weight: 400;
+}
+
+li {
+  padding-bottom: 2%;
 }
