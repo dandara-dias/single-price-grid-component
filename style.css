@@ -17,7 +17,6 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,11 +27,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   box-sizing: border-box;
-  width: 60%;
+  min-width: 60%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 3%;
 }
 
 .card1 {
@@ -41,6 +40,7 @@ main {
   padding-left: 4rem;
   background-color: hsl(203, 100%, 97%);
   width: 100%;
+  box-sizing: border-box;
 }
 
 .card1__title {
@@ -60,10 +60,11 @@ main {
   padding-bottom: 1%;
 }
 
-div {
+.bottom__cards {
   display: flex;
   width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .card2 {
@@ -117,7 +118,6 @@ strong {
   padding: 5%;
   background-color: hsl(179, 62%, 47%);
   flex: 1;
-  
 }
 
 .card3__subtitle {
@@ -134,4 +134,18 @@ ul {
 
 li {
   padding-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 60%;
+  }
+
+  .bottom__cards {
+    flex-direction: column;
+  }
+
+  .card3 {
+    padding-left: 4rem;
+  }
 }
