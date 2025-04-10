@@ -18,10 +18,22 @@
 
 body {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-color2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .card1 {
   margin: 5%;
+  background-color: var(--neutral-color1);
 }
 
 .card1__title {
@@ -43,8 +55,7 @@ body {
 
 div {
   display: flex;
-  width: auto;
-  height: auto;
+  margin: 0 5%;
 }
 
 .card2 {
