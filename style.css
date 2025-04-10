@@ -16,6 +16,10 @@
   --main-font: "Karla", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 .card1 {
   margin: 5%;
 }
@@ -39,4 +43,45 @@
 
 div {
   display: flex;
+  width: auto;
+  height: auto;
+  gap: 10%
+}
+
+.card2 {
+  padding: 5%;
+  background-color: var(--primary-color1);
+}
+
+.card2__subtitle {
+  color: var(--neutral-color1);
+  font-weight: 700;
+  padding-bottom: 10%;
+}
+
+strong {
+  font-size: 2rem;
+  color: var(--neutral-color1);
+  text-align: center;
+}
+
+.card2__text {
+  color: var(--neutral-color1);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding-bottom: 15%;
+}
+
+.card2__button {
+  color: var(--neutral-color1);
+  background-color: var(--primary-color2);
+  width: 100%;
+  padding: 6%;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
