@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://dandara-dias.github.io/single-price-grid-component/]
+- [Live Site URL](https://dandara-dias.github.io/single-price-grid-component/)
 
 ## My process
 
