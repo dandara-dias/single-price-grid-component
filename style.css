@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--neutral-color2);
+  background-color: var(--neutral-color1);
 }
 
 main {
@@ -29,11 +29,18 @@ main {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  box-sizing: border-box;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card1 {
-  margin: 5%;
-  background-color: var(--neutral-color1);
+  margin: 0 auto;
+  padding: 2rem;
+  padding-left: 4rem;
+  background-color: hsl(203, 100%, 97%);
+  width: 100%;
 }
 
 .card1__title {
@@ -55,12 +62,15 @@ main {
 
 div {
   display: flex;
-  margin: 0 5%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .card2 {
   padding: 5%;
+  padding-left: 4rem;
   background-color: var(--primary-color1);
+  flex: 1;
 }
 
 .card2__subtitle {
@@ -81,7 +91,7 @@ strong {
   display: flex;
   align-items: center;
   gap: 5%;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 
 .card2__button {
@@ -94,11 +104,20 @@ strong {
   font-weight: 700;
   font-size: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card2__button:hover {
+  cursor: pointer;
+  background-color: var(--neutral-color2);
 }
 
 .card3 {
   padding: 5%;
   background-color: hsl(179, 62%, 47%);
+  flex: 1;
+  
 }
 
 .card3__subtitle {
