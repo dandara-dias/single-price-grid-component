@@ -18,9 +18,22 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--neutral-color1);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60%;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 3%;
+  margin-bottom: 0;
 }
 
 main {
@@ -29,12 +42,12 @@ main {
   justify-content: center;
   box-sizing: border-box;
   min-width: 60%;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 3%;
+  margin-top: 0;
 }
 
-.card1 {
+.intro {
   margin: 0 auto;
   padding: 2rem;
   padding-left: 4rem;
@@ -43,18 +56,18 @@ main {
   box-sizing: border-box;
 }
 
-.card1__title {
+.intro__title {
   font-weight: 700;
   color: var(--primary-color1);
 }
 
-.card1__subtitle {
+.intro__subtitle {
   font-weight: 700;
   color: var(--primary-color2);
   padding: 4% 0 2% 0;
 }
 
-.card1__text {
+.intro__text {
   font-weight: 400;
   color: var(--neutral-color2);
   padding-bottom: 1%;
@@ -67,14 +80,15 @@ main {
   box-sizing: border-box;
 }
 
-.card2 {
+.subscription {
   padding: 5%;
   padding-left: 4rem;
   background-color: var(--primary-color1);
   flex: 1;
+  border-radius: 0 0 0 10px;
 }
 
-.card2__subtitle {
+.subscription__subtitle {
   color: var(--neutral-color1);
   font-weight: 700;
   padding-bottom: 10%;
@@ -86,7 +100,7 @@ strong {
   text-align: center;
 }
 
-.card2__text {
+.subscription__text {
   color: var(--neutral-color1);
   font-weight: 400;
   display: flex;
@@ -95,7 +109,7 @@ strong {
   padding-bottom: 5%;
 }
 
-.card2__button {
+.subscription__button {
   color: var(--neutral-color1);
   background-color: var(--primary-color2);
   width: 100%;
@@ -109,18 +123,19 @@ strong {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.card2__button:hover {
+.subscription__button:hover {
   cursor: pointer;
   background-color: var(--neutral-color2);
 }
 
-.card3 {
+.benefits {
   padding: 5%;
   background-color: hsl(179, 62%, 47%);
   flex: 1;
+  border-radius: 0 0 10px 0;
 }
 
-.card3__subtitle {
+.benefits__subtitle {
   color: var(--neutral-color1);
   font-weight: 700;
   padding-bottom: 15%;
@@ -137,6 +152,10 @@ li {
 }
 
 @media (max-width: 768px) {
+  header {
+    max-width: 60%;
+  }
+  
   main {
     max-width: 60%;
   }
@@ -145,7 +164,31 @@ li {
     flex-direction: column;
   }
 
-  .card3 {
+  .benefits {
     padding-left: 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    max-width: 95%;
+  }
+
+  .intro {
+    padding-left: 1rem;
+  }
+
+  .intro__title {
+    font-size: 1.85rem;
+  }
+
+  .subscription {
+    padding-left: 1rem;
+    border-radius: 0;
+  }
+
+  .benefits {
+    padding-left: 1rem;
+    border-radius: 0 0 10px 10px;
   }
 }
